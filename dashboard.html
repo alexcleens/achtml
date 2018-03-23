@@ -1,0 +1,613 @@
+<!-- 
+Панель управления для DS-HOST.ru
+от Alex Cleens 19.03.17-дд.03.17
+-----
+Лично от себя - Эта работа стала первой, которую я делал для кого-то, а в данном случае даже целого проекта.
+Я не стал распределять код, сделал пометки для того, кто будет устанавливать дизайн - где что писать, ставить.
+Сделал в стилистике блочного минимализма, как мне кажется - вышло довольно неплохо. Хотя во многом я пренебрег выданному макету.
+--> 
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Панель управления</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!--Стили Bootstrap-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+	
+    <!--Иконки и шрифты-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="dimgray" data-image="assets/img/sidebar-4.jpg">
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    <img src="/assets/img/logo.png" style="height:30px">
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="#">
+                        <i class="pe-7s-graph"></i>
+                        <p>Панель управления</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="pe-7s-user"></i>
+                        <p>Раздел 1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html">
+                        <i class="pe-7s-note2"></i>
+                        <p>Раздел 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="typography.html">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Раздел 3</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="icons.html">
+                        <i class="pe-7s-science"></i>
+                        <p>Раздел 4</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="maps.html">
+                        <i class="pe-7s-map-marker"></i>
+                        <p>Раздел 5</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="notifications.html">
+                        <i class="pe-7s-bell"></i>
+                        <p>Раздел 6</p>
+                    </a>
+                </li>
+				<li class="active-pro">
+                    <a href="upgrade.html">
+                        <i class="pe-7s-rocket"></i>
+                        <p>Раздел 7</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Панель управления</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bar-chart"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                           <a href="">
+                                <i class="fa fa-server"></i>&nbsp;&nbsp;Заказать сервер
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                           <a href="">
+                               Баланс: 12378р
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user"></i>
+                                    <b class="caret"></b>
+                                    <span class="notification">5</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Пункт 1</a></li>
+                                <li><a href="#">Пункт 2</a></li>
+                                <li><a href="#">Пункт 3</a></li>
+                                <li><a href="#">Пункт 4</a></li>
+                                <li><a href="#">К профилю</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Выйти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <footer class="footer">
+            <div class="container-fluid">
+				<nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    <a href="#"><i class="fa fa-refresh"></i> Обновить</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"  style="color: red"><i class="fa fa-close"></i> Выключить</a>
+                </p>
+            </div>
+			<div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div>IP: 83.222.115.202:27070</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="pull-right">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div style="background:lightblue; border-radius:25px;height: 30px"><div style="padding:5px; color:white">&nbsp;Буквенный IP: <b>cs36.ds-host:270700</b>&nbsp;</div></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <div class="content">
+            <div class="container-fluid">
+				<div class="row">
+                    <div class="col-md-8">
+								<!-- Панель сверху --> 
+<div style="margin-bottom: -20px"><div class="card">
+<ul class="accordion-tabs nav">
+  <li class="tab-head-cont"><a href="#info" class="is-active" role="tab" data-toggle="tab"><span class="fa fa-info-circle"></span> Информация</a></li>
+  <li class="tab-head-cont"><a href="#console" role="tab" data-toggle="tab"><span class="fa fa-list-alt"></span> Консоль</a></li>
+  <li class="tab-head-cont"><a href="#ftp" role="tab" data-toggle="tab"><span class="fa fa-file"></span> FTP</a></li>
+  <li class="tab-head-cont"><a href="#additions" role="tab" data-toggle="tab"><span class="fa fa-gamepad"></span> Дополнения</a></li>
+  <li class="tab-head-cont"><a href="#settings" role="tab" data-toggle="tab"><span class="fa fa-cogs"></span> Настройки</a></li>
+  <li class="tab-head-cont"><a href="#graphics" role="tab" data-toggle="tab"><span class="fa fa-trello"></span> Графики</a></li>
+</ul>
+</div></div>
+					                                    
+ 
+<!-- Содержимое вкладок -->
+<div class="tab-content">
+  <div class="tab-pane active" id="info"> 
+         <div class="card">
+             <div class="header">
+	            Информация
+	            <p class="category">Тест</p>
+             </div>
+             <div class="content">
+                   <div id="chartHours" class="ct-chart"></div>
+                   <div class="footer">
+                        <div class="legend">
+                            <i class="fa fa-circle text-info"></i> Тест
+                            <i class="fa fa-circle text-danger"></i> Тест
+                            <i class="fa fa-circle text-warning"></i> Тест
+                        </div>
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-history"></i> Updated 3 minutes ago
+                       </div>
+                  </div>
+             </div>
+        </div>
+  </div>
+  
+  <div class="tab-pane" id="console"> 
+    Консоль
+  </div>
+  <div class="tab-pane" id="ftp"> 
+    FTP
+  </div>
+  <div class="tab-pane" id="additions"> 
+    Дополнения
+  </div>
+  <div class="tab-pane" id="settings"> 
+    Настройки
+  </div>
+  <div class="tab-pane" id="graphics"> 
+    Графики
+  </div>
+  <div class="tab-pane" id="tgsettings"> 
+    Настройки Telegram
+  </div>
+  <div class="tab-pane" id="db"> 
+    Базы данных
+  </div>
+  <div class="tab-pane" id="activelogs">
+    Логи активности
+  </div>  
+  <div class="tab-pane" id="backrestore">
+    Бекап/Восстановление
+  </div>  
+  <div class="tab-pane" id="owners">
+    Совладельцы
+  </div>  
+  <div class="tab-pane" id="fastloading">
+    Быстрая загрузка
+  </div>
+  <div class="tab-pane" id="resourses">
+    Используемые ресурсы
+  </div>
+  <div class="tab-pane" id="extexit">
+    Экстренное выключение
+  </div>
+  <div class="tab-pane" id="refresh">
+    Обновление
+  </div>
+  <div class="tab-pane" id="ban">
+    Бан на оборудовании
+  </div>
+</div>
+</div>
+
+					   <div class="col-md-4">
+                        <div class="card">
+                            <div class="content">
+							    <h4 class="title text-center">Поделиться</h4>
+                                <p class="category text-center">Рассказать друзьям в соцсетях</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-linkedin"></i></button>
+								<button href="#" class="btn btn-simple"><i class="fa fa-vk"></i></button>
+								<button href="#" class="btn btn-simple"><i class="fa fa-instagram"></i></button>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-4">
+                        <div class="card">
+                            <div class="content">
+							<!-- Панель сбоку --> 
+                                <div class="footer">
+<ul class="left-tabs nav">
+  <li class="tab-head-cont"><a href="#tgsettings" role="tab" data-toggle="tab"  style="width:100%"><span class="fa fa-paper-plane"></span> Настройки Telegram <div style="background: #FB404B; color:white; border-radius: 25px;font-weight:bold">&nbsp; NEW! &nbsp;</div></a></li> 
+  <li class="tab-head-cont"><a href="#db" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-archive"></span> Базы данных</a></li>
+  <li class="tab-head-cont"><a href="#activelogs" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-area-chart"></span> Логи активности</a></li>
+  <li class="tab-head-cont"><a href="#backrestore" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-cloud"></span> Бекап/Восстановление</a></li>
+  <hr>
+  <li class="tab-head-cont"><a href="#owners" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-id-card"></span> Совладельцы</a></li>
+  <li class="tab-head-cont"><a href="#fastloading" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-download"></span> Быстрая загрузка</a></li>
+  <li class="tab-head-cont"><a href="#resourses" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-folder-open"></span> Используемые ресурсы</a></li>
+  <li class="tab-head-cont"><a href="#extexit" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-times-circle"></span> Экстренное выключение</a></li>
+  <li class="tab-head-cont"><a href="#refresh" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-circle-o-notch"></span> Обновление</a></li>
+  <hr>
+  <li class="tab-head-cont"><a href="#ban" role="tab" data-toggle="tab" style="width:100%"><span class="fa fa-ban"></span> Бан на оборудовании</a></li>
+</ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="content">
+            <div class="container-fluid">
+                <div class="card">
+
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="alert alert-info alert-with-icon" data-notify="container">
+                                    <button type="button" aria-hidden="true" class="close"></button>
+                                    <span data-notify="icon" class="pe-7s-check"></span>
+                                    <span data-notify="message">Техническая поддержка готова придти Вам на помощь в любое время(средняя задержка обработки запроса не более 15 минут)</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-info alert-with-icon" data-notify="container">
+                                    <button type="button" aria-hidden="true" class="close"></button>
+                                    <span data-notify="icon" class="pe-7s-check"></span>
+                                    <span data-notify="message">Техническая поддержка готова придти Вам на помощь в любое время(средняя задержка обработки запроса не более 15 минут)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.accordion-tabs').children('li').first().children('a').addClass('is-active')
+              .next().addClass('is-open').show();
+        $('.accordion-tabs').on('click', 'li > a', function(event) {
+            if (!$(this).hasClass('is-active')) {
+                event.preventDefault();
+                $('.accordion-tabs .is-open').removeClass('is-open').hide();
+                $(this).next().toggleClass('is-open').toggle();
+                $('.accordion-tabs').find('.is-active').removeClass('is-active');
+                $(this).addClass('is-active');
+				$('.left-tabs .is-open').removeClass('is-open').hide();
+                $(this).next().toggleClass('is-open').toggle();
+                $('.left-tabs').find('.is-active').removeClass('is-active');
+                $(this).addClass('is-active');
+            } else {
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.left-tabs').on('click', 'li > a', function(event) {
+            if (!$(this).hasClass('is-active')) {
+                event.preventDefault();
+                $('.left-tabs .is-open').removeClass('is-open').hide();
+                $(this).next().toggleClass('is-open').toggle();
+                $('.left-tabs').find('.is-active').removeClass('is-active');
+                $(this).addClass('is-active');
+				                $('.accordion-tabs .is-open').removeClass('is-open').hide();
+                $(this).next().toggleClass('is-open').toggle();
+                $('.accordion-tabs').find('.is-active').removeClass('is-active');
+                $(this).addClass('is-active');
+            } else {
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+<style>
+/* TABS */
+.accordion-tabs {
+    *zoom: 1;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 0.1875em;
+    margin-bottom: 1.5em;
+    margin-left:0;
+    padding-left:0;
+}
+    .accordion-tabs:before,
+    .accordion-tabs:after {
+        content: " ";
+        display: table;
+    }
+    .accordion-tabs:after {
+        clear: both;
+    }
+        .accordion-tabs li{
+            list-style:none;
+        }
+            .accordion-tabs li.tab-head-cont:first-child a {
+                border-top-left-radius: 0.1875em;
+                border-top-right-radius: 0.1875em;
+                border-top: 0;
+            }
+            .accordion-tabs li.tab-head-cont:last-child a {
+                border-bottom-left-radius: 0.1875em;
+                border-bottom-right-radius: 0.1875em;
+            }
+            .accordion-tabs li.tab-head-cont a {
+                text-decoration:none;
+                border-top: 1px solid #dddddd;
+                color: #888888;
+                display: block;
+                padding: 0.75em 0.809em;
+            }
+            .accordion-tabs li.tab-head-cont a:hover {
+                color: #000000;
+            }
+            .accordion-tabs li.tab-head-cont a:focus {
+                outline: none;
+            }
+            .accordion-tabs li.tab-head-cont a.is-active {
+                background-color: #f7f7f7;
+                border-bottom: 0;
+                color:#333333;
+            }
+        .accordion-tabs li.tab-head-cont section {
+            padding: 1.5em 1.618em;
+          /*  background: #f7f7f7; Цвет раздела */
+            display: none;
+            overflow: hidden;
+            width: 100%;
+        }
+/* RESPONSIVE */
+@media screen and (min-width: 40em) {
+    .accordion-tabs {
+        border: none;
+        position: relative;
+    }
+        .accordion-tabs li.tab-head-cont {
+            display: inline;
+        }
+            .accordion-tabs li.tab-head-cont:last-child a {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .accordion-tabs li.tab-head-cont a {
+                display: inline-block;
+                vertical-align: baseline;
+                zoom: 1;
+                *display: inline;
+                *vertical-align: auto;
+                border-top: 0;
+                border-top-right-radius: 0.1875em;
+                border-top-left-radius: 0.1875em;
+            }
+            .accordion-tabs li.tab-head-cont a.is-active {
+                background-color: #f7f7f7;
+                border-bottom: 3px solid #00B8D9;
+                margin-bottom: -1px;
+            }
+
+            .accordion-tabs li.tab-head-cont section {
+                border-bottom-left-radius: 0.1875em;
+                border-bottom-right-radius: 0.1875em;
+             /*   border: 1px solid #dddddd;  Обводка раздела */
+                float: left;
+                left: 0;
+                padding: 0.75em 0.809em;
+            }
+                .accordion-tabs li.tab-head-cont section p {
+                    -webkit-columns: 2;
+                    -moz-columns: 2;
+                    columns: 2;
+                }
+}
+
+</style>
+<style>
+/* TABS */
+.left-tabs {
+    *zoom: 1;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 0.1875em;
+    margin-bottom: 1.5em;
+    margin-left:0;
+    padding-left:0;
+}
+    .left-tabs:before,
+    .left-tabs:after {
+        content: " ";
+        display: table;
+    }
+    .left-tabs:after {
+        clear: both;
+    }
+        .left-tabs li{
+            list-style:none;
+        }
+            .left-tabs li.tab-head-cont:first-child a {
+                border-top-left-radius: 0.1875em;
+                border-top-right-radius: 0.1875em;
+                border-top: 0;
+            }
+            .left-tabs li.tab-head-cont:last-child a {
+                border-bottom-left-radius: 0.1875em;
+                border-bottom-right-radius: 0.1875em;
+            }
+            .left-tabs li.tab-head-cont a {
+                text-decoration:none;
+                border-top: 1px solid #dddddd;
+                color: #888888;
+                display: block;
+                padding: 0.75em 0.809em;
+            }
+            .left-tabs li.tab-head-cont a:hover {
+                color: #000000;
+            }
+            .left-tabs li.tab-head-cont a:focus {
+                outline: none;
+            }
+            .left-tabs li.tab-head-cont a.is-active {
+                background-color: #f7f7f7;
+                border-bottom: 0;
+                color:#333333;
+            }
+        .left-tabs li.tab-head-cont section {
+            padding: 1.5em 1.618em;
+          /*  background: #f7f7f7; Цвет раздела */
+            display: none;
+            overflow: hidden;
+            width: 100%;
+        }
+/* RESPONSIVE */
+@media screen and (min-width: 40em) {
+    .left-tabs {
+        border: none;
+        position: relative;
+    }
+        .left-tabs li.tab-head-cont {
+            display: inline;
+        }
+            .left-tabs li.tab-head-cont:last-child a {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .left-tabs li.tab-head-cont a {
+                display: inline-block;
+                vertical-align: baseline;
+                zoom: 1;
+                *display: inline;
+                *vertical-align: auto;
+                border-top: 0;
+                border-top-right-radius: 0.1875em;
+                border-top-left-radius: 0.1875em;
+            }
+            .left-tabs li.tab-head-cont a.is-active {
+                background-color: #f7f7f7;
+                border-left: 3px solid #00B8D9;
+            }
+
+            .left-tabs li.tab-head-cont section {
+                border-bottom-left-radius: 0.1875em;
+                border-bottom-right-radius: 0.1875em;
+             /*   border: 1px solid #dddddd;  Обводка раздела */
+                float: left;
+                left: 0;
+                padding: 0.75em 0.809em;
+            }
+                .left-tabs li.tab-head-cont section p {
+                    -webkit-columns: 2;
+                    -moz-columns: 2;
+                    columns: 2;
+                }
+}
+
+</style>
+</html>
